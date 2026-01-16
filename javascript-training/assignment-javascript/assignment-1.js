@@ -107,3 +107,4 @@ console.log("Person Details : ",person);
 
 const distance = 200.5;
 console.log('Distance : ',distance);
+

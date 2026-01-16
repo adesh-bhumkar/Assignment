@@ -33,7 +33,16 @@ console.log(empName);
 let pinNum;
 console.log(pinNum);
 
-//6. symbol -
+//6. symbol ==> reprsent a 8unique identifire.
+var countryName = Symbol(); 
+let productInfo= {
+    productName: "OnePlus 9",
+    productPrice: 100000,
+    [countryName]: "China"
+}
+console.log(productInfo);
+console.log(productInfo[countryName]);
+
 
 
 /**** Non-Primitive data type******/
@@ -65,7 +74,68 @@ let fruitPrice=['Apple',100,'Mango',150,'Banana',50];
 console.log(fruitPrice[4]);
 console.log(fruitPrice[5]);
 
+//3. Function ==> function represrnt a block of code design to perform a particular task
 
+function launchTheApplication(browserName,url){
+    console.log("Launch the Browser: " +browserName);
+    console.log("Navigate to url : " +url);
+    console.log("Application Lauch Sucessfully");
+}
+
+// call the function
+launchTheApplication("Chrome","https//www.example.com");
+
+//4. Date ==> DAte represent date and current time in javascript
+let currentDate = new Date();
+
+console.log(currentDate);
+
+//Year
+
+console.log(currentDate.getFullYear());
+
+//Month
+
+console.log(currentDate.getMonth()+1);
+
+
+//date
+
+console.log(currentDate.getDate());
+
+//Hour
+
+console.log(currentDate.getHours());
+
+//Minute
+
+console.log(currentDate.getMinutes());
+
+//Map ==>  Represents a collection of key-value pairs. Keys can be of any data type. 
+
+let employeMap=new Map();
+
+employeMap.set("empid",10);
+employeMap.set("empName","John Doe");
+employeMap.set("havingVisa",true);
+employeMap.set("empName","Bharat");
+
+console.log(employeMap.get("empName"));
+
+//Set ==> Represents a collection of unique values of any data
+
+let uniqueNumbers=new Set();
+
+uniqueNumbers.add(10);
+uniqueNumbers.add(20);
+uniqueNumbers.add(30);
+uniqueNumbers.add(40);
+uniqueNumbers.add(50);
+
+console.log(uniqueNumbers);
+console.log(uniqueNumbers.size);
+console.log(uniqueNumbers.delete(40));
+console.log(uniqueNumbers);
 
 
 
